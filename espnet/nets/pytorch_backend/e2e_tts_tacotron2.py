@@ -609,6 +609,10 @@ class Tacotron2(TTSInterface, torch.nn.Module):
 
         """
         # get options
+
+        print("==================")
+        print("==================")
+        print("TESTING TACOTRON")
         threshold = inference_args.threshold
         minlenratio = inference_args.minlenratio
         maxlenratio = inference_args.maxlenratio

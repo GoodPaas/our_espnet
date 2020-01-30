@@ -597,6 +597,10 @@ class Transformer(TTSInterface, torch.nn.Module):
         minlenratio = inference_args.minlenratio
         maxlenratio = inference_args.maxlenratio
         use_att_constraint = getattr(inference_args, "use_att_constraint", False)  # keep compatibility
+
+        print("==================")
+        print("==================")
+        print("TESTING TRANSFORMER")
         if use_att_constraint:
             logging.warning("Attention constraint is not yet supported in Transformer. Not enabled.")
 

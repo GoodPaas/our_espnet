@@ -532,6 +532,10 @@ class FeedForwardTransformer(TTSInterface, torch.nn.Module):
             None: Dummy for compatibility.
 
         """
+
+        print("==================")
+        print("==================")
+        print("TESTING FASTSPEECH")
         # setup batch axis
         ilens = torch.tensor([x.shape[0]], dtype=torch.long, device=x.device)
         xs = x.unsqueeze(0)
