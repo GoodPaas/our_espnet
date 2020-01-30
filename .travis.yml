@@ -35,11 +35,11 @@ install:
   - travis_retry ./ci/install.sh
   - travis_retry ./ci/install_kaldi.sh
 
-script:
-  - ./ci/test_shell.sh
-  - ./ci/test_python.sh
-  - ./ci/test_integration.sh
-  - ./ci/doc.sh
+#script:
+#  - ./ci/test_shell.sh
+#  - ./ci/test_python.sh
+#  - ./ci/test_integration.sh
+#  - ./ci/doc.sh
 
 sudo: false
 
