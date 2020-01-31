@@ -535,7 +535,7 @@ class FeedForwardTransformer(TTSInterface, torch.nn.Module):
 
         print("==================")
         print("==================")
-        print("TESTING FASTSPEECH")
+        print("TESTING FASTSPEECH. If cloned, this should appear")
         # setup batch axis
         ilens = torch.tensor([x.shape[0]], dtype=torch.long, device=x.device)
         xs = x.unsqueeze(0)
